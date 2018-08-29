@@ -8,7 +8,7 @@ with open("requirements.txt", "r") as fs:
     reqs = [r for r in fs.read().splitlines() if (len(r) > 0 and not r.startswith("#"))]
 
 setup(
-    name="napalm-asa",
+    name="napalm-asa-asdm",
     version="0.1.0",
     packages=find_packages(),
     author="Diogo Assumpcao",
@@ -22,7 +22,7 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Operating System :: MacOS',
     ],
-    url="https://github.com/napalm-automation-community/napalm-asa",
+    url="https://github.com/DiogoAndre/napalm-asa-asdm",
     include_package_data=True,
     install_requires=reqs,
 )
